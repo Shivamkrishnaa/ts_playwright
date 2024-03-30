@@ -1,0 +1,22 @@
+{
+  "name": "ts_playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm-run-all --parallel run-v*",
+    "run-v0": "tsc src/v0/index.ts && node src/v0/index.js",
+    "run-v1": "tsc src/v1/index.ts && node src/v1/index.js",
+    "run-v2": "tsc src/v2/index.ts && node src/v2/index.js",
+    "run-v3": "tsc src/v3/index.ts && node src/v3/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "concurrently": "^8.2.2",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.4.3"
+  }
+}
